@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <link rel="stylesheet" href="/backend/style.css">
+        <link rel="stylesheet" href="/backend/node_modules/blueimp-gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="/backend/node_modules/blueimp-gallery/css/blueimp-gallery-video.css"> 
+        
+    </head>
+    <body >
+       
+        <div class="wrapper">
+            <div class="mainContent">
+                <div class="FIO">
+                    FIO
+                </div>
+                <div class="Image-Gallery">
+                        
+                    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel blueimp-gallery-display blueimp-gallery-playing">
+                        <div class="slides" >
+                            <div id="links">
+                                <a href="/frontend/img/image1.jpg" title="Banana">
+                                    <img src="/frontend/img/image1.jpg" alt="Banana">
+                                </a>
+                                <a href="/frontend/img/image1.jpg" title="Apple">
+                                    <img src="/frontend/img/image1.jpg" alt="Apple">
+                                </a>
+                                <a href="/frontend/img/image1.jpg" title="Orange">
+                                    <img src="/frontend/img/image1.jpg" alt="Orange">
+                                </a>
+                                <a href="/frontend/video/video1.mp4" title="fruir">
+                                    <video  src="/frontend/video/video1.mp4"></video>
+                                </a>
+                            </div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="Video-Gallery">
+                        
+                </div>
+            </div>
+            <div class="sidebar left">
+                <ul class="contacts">
+                    <li class="vk">
+                        <a href="#"><img src="/frontend/img/logo/vk.png"></a>
+                    </li>
+                    <li class="telegram">
+                        <a href="#"><img src="/frontend/img/logo/telegram.png"></a>
+                    </li>
+                    <li class="number">
+                        <a href="#"><img src="/frontend/img/logo/telephone.png"></a>
+                    </li>
+                    <li class="facebook">
+                        <a href="#"><img src="/frontend/img/logo/facebook.png"></a>
+                    </li>
+                    <li class="email">
+                        <a href="#"><img src="/frontend/img/logo/email.png"></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="sidebar right">
+                
+            </div>
+        </div>
+        
+         </body> 
+</html>
+<script src="/backend/node_modules/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+    
+         <script>
+            
+            blueimp.Gallery(
+                document.getElementById('links').getElementsByTagName('a'),
+                {
+                    container: '#blueimp-gallery-carousel',
+                    carousel: true
+                }
+            
+            );
+         
+            </script> <script src="/backend/node_modules/blueimp-gallery/js/blueimp-gallery-video.js"></script>
+ 
+      

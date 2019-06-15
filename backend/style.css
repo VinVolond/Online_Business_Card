@@ -1,0 +1,43 @@
+body {
+    background-image: url("/frontend/img/background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    margin: 0;
+    font-size:24px;
+    }
+    .wrapper {
+    display: flex;
+    }
+    .mainContent {
+    order: 2;
+    flex:15;
+    }
+    .Image-Gallery, .Video-Gallery{
+        text-align: center;
+        padding: 40px;
+        padding-top: 20px;
+    }
+    .FIO{
+        
+        text-align: center;
+        height: 7%;
+        margin-top: 20px;
+    }
+    .sidebar {
+    flex:1;    }
+    .left {
+    order: 1;
+    }
+    .right {
+    order: 3;
+    }
+    img{
+        height: 100px;
+    }
+    footer, header {
+    position: fixed;
+    height: 5%;
+    background-color: gray;
+    opacity: 0.9;
+    }
